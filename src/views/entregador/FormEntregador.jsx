@@ -1,8 +1,7 @@
-import React from "react";
-import { Button, Container, Divider, Form, Icon } from 'semantic-ui-react';
 import InputMask from 'comigo-tech-react-input-mask';
+import { Button, Container, Divider, Form, Icon } from 'semantic-ui-react';
+import MenuSistema from '../../MenuSistema';
 
-// Opções para o campo de seleção de UF
 const ufOptions = [
     { key: 'ac', text: 'AC', value: 'AC' },
     { key: 'al', text: 'AL', value: 'AL' },
@@ -38,6 +37,7 @@ export default function FormEntregador () {
     return (
 
         <div>
+            <MenuSistema tela={'entregador'} />
             <div style={{marginTop: '3%'}}>
                 <Container textAlign='justified' >
 
