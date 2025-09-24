@@ -1,5 +1,6 @@
 import { Segment } from 'semantic-ui-react';
 import './App.css';
+import FormCliente from './views/cliente/FormCliente';
 import Rotas from './Rotas';
 
 function App() {
