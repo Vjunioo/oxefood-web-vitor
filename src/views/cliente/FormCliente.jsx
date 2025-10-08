@@ -53,11 +53,11 @@ export default function FormCliente() {
         }
         console.log("idcliente "+ idCliente)
 
-        if (idCliente != null) { //Alteração:
+        if (idCliente != null) { 
             axios.put("http://localhost:8080/api/cliente/" + idCliente, clienteRequest)
                 .then((response) => { console.log('Cliente alterado com sucesso.') })
                 .catch((error) => { console.log('Erro ao alter um cliente.') })
-        } else { //Cadastro:
+        } else { 
             axios.post("http://localhost:8080/api/cliente", clienteRequest)
                 .then((response) => { console.log('Cliente cadastrado com sucesso.') })
                 .catch((error) => { console.log('Erro ao incluir o cliente.') })
